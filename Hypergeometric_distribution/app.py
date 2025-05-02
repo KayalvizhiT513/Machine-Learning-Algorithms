@@ -51,13 +51,10 @@ Please explain:
 - Any interesting or non-obvious observations
 """
 
-st.subheader("🧠 Gemini Summary")
-
-if st.button("Generate Summary"):
-    try:
-        model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")
-        response = model.generate_content(prompt)
-        st.success("Summary from Gemini:")
-        st.write(response.text)
-    except Exception as e:
-        st.error(f"Error calling Gemini API: {e}")
+try:
+    model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")
+    response = model.generate_content(prompt)
+    st.success("Summary from GenAI:")
+    st.write(response.text)
+except Exception as e:
+    st.error(f"Error calling Gemini API: {e}")
