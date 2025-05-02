@@ -9,9 +9,9 @@ import os
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]  # Add this to .streamlit/secrets.toml
 genai.configure(api_key=GOOGLE_API_KEY)
 
-st.set_page_config(page_title="Hypergeometric PMF + Gemini Summary")
+st.set_page_config(page_title="Hypergeometric PMF")
 
-st.title("🎲 Hypergeometric PMF Explorer + Gemini Insight")
+st.title("🎲 Hypergeometric PMF Explorer")
 
 # Sidebar controls
 N = st.sidebar.slider("Population size (N)", 10, 500, 100)
