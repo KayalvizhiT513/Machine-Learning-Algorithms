@@ -18,7 +18,7 @@ N = st.sidebar.slider("Population size (N)", 10, 500, 100)
 k = st.sidebar.slider("Sample size (k)", 1, N, 90)
 m_min, m_max = st.sidebar.slider("Successes in population range (m)", 0, N, (k, N))
 m_step = st.sidebar.number_input("Step size for m", min_value=1, max_value=max(1, m_max - m_min), value=1)
-x_min, x_max = st.sidebar.slider("Observed successes in sample range (x)", 0, k, (N, k))
+x_min, x_max = st.sidebar.slider("Observed successes in sample range (x)", 0, k, (0, k))
 
 # Plotting
 fig, ax = plt.subplots()
