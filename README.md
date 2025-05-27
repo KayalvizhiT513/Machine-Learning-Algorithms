@@ -1,1 +1,1 @@
-# WhyMachinesLearn-Algos
+# Machine Learning-Algos
